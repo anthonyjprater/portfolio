@@ -3,27 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>My Html Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
   </head>
   <body>
     <header>
       <h1>Home Page</h1>
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="mailto:ajp1984@uw.edu">Contact</a>
       </nav>
     </header>
 
     <section>
       <h2>About Me</h2>
-        <article>
-          <h3>Here's the story</h3>
+        <article class="my-story">
+          <h3 class="background-info">Here's the Story</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices, urna non pellentesque congue, nisi nulla lacinia ligula, et imperdiet nisi lacus a neque. Nulla id lectus at neque consectetur egestas. Fusce justo eros, vulputate a ullamcorper quis, fermentum et leo. Aliquam erat volutpat. Proin fringilla purus mauris, ac iaculis massa lobortis non. Curabitur semper tellus eget arcu lobortis, eu pharetra enim blandit. Sed volutpat semper porta. Ut finibus turpis ac sem elementum, in fermentum mi venenatis. Nulla a lacinia orci, rutrum congue justo. Integer sed dolor quis mauris mattis fringilla eget eu tellus. Sed mollis, leo vel dapibus facilisis, magna elit pharetra ipsum, a tempor tellus velit nec orci.</p>
-
         </article>
-      <article>
-        <h3>What brought me here</h3>
+        <figure class="headshot">
+          <img class="profile" src="images/code-tattoo-small.jpg" alt="Tattoo of HTML elements" height="250px;">
+          <figcaption>That's an interesting way to remember.</figcaption>
+        </figure>
+      <article class="goals">
+        <h3 class="journey">What Brought Me Here</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas euismod commodo imperdiet. Sed posuere magna quis neque posuere, id accumsan erat semper.
            Vivamus tristique odio tellus, in ultricies nisl suscipit ac. Phasellus ultrices, mi vel bibendum fermentum, nulla purus convallis ligula, at ultrices ipsum purus at nunc.
            Sed at lacinia lacus. Phasellus pellentesque leo maximus lacus porta commodo. Sed tincidunt, nisi a eleifend fermentum, nisi lorem vestibulum metus, in semper libero libero in augue.
@@ -39,15 +42,8 @@
            Quisque pharetra tellus eu purus elementum, in eleifend nibh rhoncus. Maecenas vehicula rutrum urna at tempus. Nam ultricies tempus justo ut condimentum.
            Mauris sollicitudin neque ac libero blandit, eu luctus augue varius. Duis ultrices, eros nec tristique efficitur, purus erat sodales ligula, a semper orci augue vel turpis.</p>
       </aside>
-      <figure>
-        <img src="images/code-tattoo-small.jpg" alt="Tattoo of HTML elements">
-        <figcaption>That's an interesting way to remember.</figcaption>
-      </figure>
     </section>
-    <section>
-      <h3>Contact Me</h3>
-        <p><a href="mailto:ajp1984@uw.edu">Send Me an Email</a></p>
-    </section>
+
     <footer>
       <p>This page was created by me for HTML5 100, 2020</p>
     </footer>

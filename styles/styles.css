@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+nav {
+  position: relative;
+  background-color: transparent;
+  overflow: hidden;
+  font-family: Arial, Helvetica ,sans-serif;
+  font-style: italic;
+  margin: 1rem;
+  padding: 0.25rem;
+}
+nav a {
+  float: none;
+  color: white;
+  font-size: 1.125rem;
+  background-color: #708090;
+  padding: 2rem;
+  border: 2px solid white;
+}
+h3.background-info {
+  position: relative;
+  float: left;
+  padding: 0rem;
+  margin: 0rem;
+}
+.my-story {
+  background-color: transparent;
+  height: 20rem;
+  width: 40%;
+  padding: 2rem;
+  float: right;
+  position: relative;
+  text-align: center;
+  margin: 1rem;
+}
+.my-story p {
+  overflow: auto;
+  text-align: left;
+  position: relative;
+  float: right;
+}
+h3.journey {
+  position: relative;
+  padding: 0rem;
+  margin: 0rem;
+  text-align: left;
+}
+.goals {
+  background-color: transparent;
+  height: 22rem;
+  width: 55%;
+  padding: 2rem;
+  clear: right;
+  position: relative;
+  margin: 1rem;
+}
+.goals p {
+  width: 100%;
+  text-align: left;
+  margin: auto;
+}
+aside {
+  clear: both;
+  margin: 1rem;
+}
+.headshot {
+  width: 30%;
+  transform: rotate(-15deg);
+}
+.profile {
+  padding: 2rem;
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, white,rgba(0, 0, 0, 0)) 1 100%;
+}
+footer {
+  position: relative;
+  margin: 2rem;
+}
+.project-list {
+  height: 20rem;
+  border: 2px solid white;
+  list-style-type: none;
+  margin-bottom: 20rem;
+}
+
+.project-list li {
+  float:left;
+  padding-left: 2rem;
+  margin: 1rem;
+}
