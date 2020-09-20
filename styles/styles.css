@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: black;
+  background: linear-gradient(to top, #000033 0%, #080808 100%);
   color: white;
   text-align: center;
   font-family: Tahoma, Geneva, sans-serif;
@@ -80,6 +80,7 @@ aside {
   border-width: 3px;
   border-style: solid;
   border-image: linear-gradient(to bottom, white,rgba(0, 0, 0, 0)) 1 100%;
+  border-radius: 17%;
 }
 footer {
   position: relative;
@@ -95,4 +96,11 @@ footer {
   float:left;
   padding-left: 2rem;
   margin: 1rem;
+}
+section ul li img {
+  border-radius: 25%;
+}
+
+article figure img {
+  border-radius: 10%;
 }
