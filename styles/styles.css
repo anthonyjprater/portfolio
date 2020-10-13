@@ -6,7 +6,9 @@ body {
   background: linear-gradient(to top, #000033 0%, #080808 100%);
   color: white;
   text-align: center;
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 nav {
   position: relative;
@@ -24,6 +26,16 @@ nav a {
   background-color: #708090;
   padding: 2rem;
   border: 2px solid white;
+}
+h1 {
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 3rem;
+  line-height: 0.5rem;
+}
+h2, h3, h4, h5, h6 {
+  font-family: 'News Cycle', sans-serif;
+  font-style: normal;
+  font-weight: 700;
 }
 h3.background-info {
   position: relative;
