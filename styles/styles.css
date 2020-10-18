@@ -23,9 +23,20 @@ nav a {
   float: none;
   color: white;
   font-size: 1.125rem;
-  background-color: #708090;
+  background-color: #080808;
   padding: 2rem;
-  border: 2px solid white;
+  border: 5px solid white;
+  transition: background-color 1.5s, border 2s ease;
+}
+nav a:hover{
+  background-color: #708090;
+  border: 2px solid #708090;
+}
+section {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 h1 {
   font-family: 'Permanent Marker', sans-serif;
@@ -46,12 +57,11 @@ h3.background-info {
 .my-story {
   background-color: transparent;
   height: 20rem;
-  width: 40%;
   padding: 2rem;
-  float: right;
-  position: relative;
+  flex: 1 30rem;
   text-align: center;
   margin: 1rem;
+  align-self: center;
 }
 .my-story p {
   overflow: auto;
@@ -67,12 +77,12 @@ h3.journey {
 }
 .goals {
   background-color: transparent;
-  height: 22rem;
-  width: 55%;
+  height: 25rem;
+  width: 25%;
   padding: 2rem;
-  clear: right;
-  position: relative;
-  margin: 1rem;
+  flex: 1 30rem;
+  margin-top: 3 rem;
+  align-self: flex-end;
 }
 .goals p {
   width: 100%;
@@ -86,6 +96,9 @@ aside {
 .headshot {
   width: 30%;
   transform: rotate(-15deg);
+  flex: 1 30rem;
+  background-color: transparent;
+  margin-bottom: 4rem;
 }
 .profile {
   padding: 2rem;
@@ -115,4 +128,10 @@ section ul li img {
 
 article figure img {
   border-radius: 10%;
+}
+.fab {
+  margin: 1rem;
+  background: radial-gradient( red, blue);
+  border-radius: 50%;
+  font-size: 2rem;
 }
