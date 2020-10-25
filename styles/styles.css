@@ -39,7 +39,7 @@ a {
   transition: color 2s;
 }
 a:hover{
-  color: linear-gradient(to left, red,ble);
+  color: blue;
 }
 .about-me {
   display: flex;
@@ -96,7 +96,15 @@ h4.journey {
   align-self: center;
   font-family: 'Roboto Condensed',sans-serif;
   font-weight: 400;
+  padding: 2rem;
 }
+.holder {
+  flex: 1 30rem;
+  text-align: left;
+  padding: 2rem;
+  margin: 2rem;
+}
+
 .goals p {
   overflow: auto;
   text-align: left;
@@ -107,12 +115,15 @@ aside {
   margin: 1rem;
 }
 .headshot {
-  width: 30%;
   transform: rotate(-15deg);
   flex: 1 30rem;
   background-color: transparent;
   margin-bottom: 4rem;
   transition: transform 3s;
+}
+.headshot:hover {
+  transform: rotate(355deg);
+
 }
 .profile {
   padding: 1rem;
@@ -120,6 +131,12 @@ aside {
   border-style: solid;
   border-image: linear-gradient(to bottom, white,rgba(0, 0, 0, 0)) 1 100%;
   border-radius: 17%;
+  width: 35%;
+  transition: width 2s;
+}
+.profile:hover {
+  width: 60%;
+  height: 60%;
 }
 footer {
   position: relative;
@@ -132,11 +149,6 @@ footer {
   list-style-type: none;
   margin-bottom: 20rem;
 }
-.headshot:hover {
-  transform: rotate(165deg);
-  transition: transform 3s ease;
-}
-
 .project-list a >:hover {
   transform: skewY(10deg) skewX(0deg);
   color: white;
@@ -162,13 +174,13 @@ article figure img {
   font-size: 2rem;
 }
 article:nth-child(odd) {
-  transition: color 2s;
+  transition: color 3s;
 }
 article:nth-child(odd):hover {
   color: red;
 }
 article:nth-child(even) {
-  transition: color 2s;
+  transition: color 3s;
 }
 article:nth-child(even):hover {
   color: blue;
