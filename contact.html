@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Html Portfolio</title>
+    <script src="https://kit.fontawesome.com/5398a5e1fc.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Permanent+Marker&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  </head>
+  <body>
+    <header>
+      <h1><i class="fab fa-jedi-order"></i>Anthony Prater<i class="fab fa-jedi-order"></i></h1>
+      <h2>Web Design</h2>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <form class="contact-name">
+        <label for="first-name">First name:</label>
+        <input type="text" id="first-name" name="first-name" value="">
+        <label for="last-name">Last name:</label>
+        <input type="text" id="last-name" name="last-name" value="">
+      </form>
+      <form class="query">
+         <label>What types of services are in need of?</label>
+         <textarea rows = "5" cols = "30" name = "description">...</textarea>
+      </form>
+      <form class="contact-pref">
+        <label>Would you like to be contacted by phone?
+        </label>
+        <input type="radio" id="yes" name="contact-pref" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="contact-preference" value="no"> <label for="no">No</label>
+      </form>
+      <form class="time-pref">
+        <label>What time would be best to contact you?</label>
+        <select name = "dropdown">
+        <option value = "Mornning" selected>6am-10am</option>
+        <option value = "Mid-day">10am-2pm</option>
+        <option value = "Evening">2pm-6pm</option>
+        </select>
+      </form>
+      <form class="contact-submit">
+        <input type = "submit" name = "submit" value = "Submit" />
+      </form>
+    </div>
+
+    <footer>
+      <p>This page was created by me for HTML5 100, 2020</p>
+    </footer>
+
+  </body>
+</html>
