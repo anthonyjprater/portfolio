@@ -17,41 +17,45 @@
         <a href="contact.html">Contact</a>
       </nav>
     </header>
-
-    <div class="container">
-      <form class="contact-name">
-        <label for="first-name">First name:</label>
-        <input type="text" id="first-name" name="first-name" value="">
-        <label for="last-name">Last name:</label>
-        <input type="text" id="last-name" name="last-name" value="">
-      </form>
-      <form class="query">
-         <label>What types of services are in need of?</label>
-         <textarea rows = "5" cols = "30" name = "description">...</textarea>
-      </form>
-      <form class="contact-pref">
-        <label>Would you like to be contacted by phone?
-        </label>
-        <input type="radio" id="yes" name="contact-pref" value="yes">
-        <label for="yes">Yes</label>
-        <input type="radio" id="no" name="contact-preference" value="no"> <label for="no">No</label>
-      </form>
-      <form class="time-pref">
-        <label>What time would be best to contact you?</label>
-        <select name = "dropdown">
-        <option value = "Mornning" selected>6am-10am</option>
-        <option value = "Mid-day">10am-2pm</option>
-        <option value = "Evening">2pm-6pm</option>
-        </select>
-      </form>
-      <form class="contact-submit">
-        <input type = "submit" name = "submit" value = "Submit" />
-      </form>
-    </div>
-
+      <div class="container">
+        <form class="contact-form" action="/action.php" method="GET">
+          <label>First name:
+            <input type="text" id="first-name" name="firstName" value="">
+          </label>
+          <label>Last name:
+            <input type="text" id="last-name" name="lastName" value="">
+          </label>
+          <label>Enter your email address:
+            <input type="email" id="email" name="email">
+          </label>
+          <label>Please explain your query</label>
+            <textarea rows="10" cols="30" name="description">Enter description here...</textarea>
+          <fieldset>
+            <legend>Would you like to be contacted by phone?</legend>
+              <label>
+                <input type="radio" name="contactPreference" value="yes">Yes
+              </label>
+              <label>
+                <input type="radio" name="contactPreference" value="no">No
+              </label>
+          </fieldset>
+          <br>
+          <br>
+          <label>Please enter a contact phone number
+            <input type="tel" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="123-456-7890">
+          </label>
+          <label>What time would be best to contact you?
+            <select name = "dropDown">
+            <option value = "Mornning" selected>6am-10am</option>
+            <option value = "Mid-day">10am-2pm</option>
+            <option value = "Evening">2pm-6pm</option>
+            </select>
+          </label>
+          <input type="submit" name="submit" value="Submit">
+        </form>
+      </div>
     <footer>
       <p>This page was created by me for HTML5 100, 2020</p>
     </footer>
-
   </body>
 </html>
